@@ -32,13 +32,13 @@ generateList([3, [43, 4, 76], 4, [3, 4], 45, [3, 4, 5], 4, 5]);
 const $table = document.createElement('table');
   
   for (let j = 0; j < 10; j++) {
-    const row = document.createElement('tr');
+    const $row = document.createElement('tr');
    
     for (let i = 1; i <= 10; i++) {
-      const cell = document.createElement('td');
-      cell.textContent = `${j * 10 + i}`;
-      row.append(cell);
+      const $cell = document.createElement('td');
+      $cell.textContent = `${j * 10 + i}`;
+      $row.append($cell);
     }
-    $table.append(row);
+    $table.append($row);
   }
   document.body.append($table);
